@@ -23,7 +23,7 @@ switchport trunk allowed vlan 10,20,99
 no shutdown
 
 interface range g01/0/3-4
-channel-group 1 mode active
+channel-group 1 mode passive
 exit
 interface port-channel 1
 switchport mode trunk
@@ -32,7 +32,7 @@ switchport trunk allowed vlan 10,20,99
 exit
 
 interface range g1/0/5-6
-channel-group 2 mode active
+channel-group 2 mode passive
 exit
 interface port-channel 2
 switchport mode trunk
